@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard Package - Kieseki</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="../index.html" class="logo">
+            <i class="fas fa-seedling"></i>Kieseki
+        </a>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="../index.html#features">What's Inside</a></li>
+                <li><a href="../index.html#teens">For Teens</a></li>
+                <li><a href="../index.html#pricing">Pricing</a></li>
+                <li><a href="../index.html#testimonials">Success</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <div class="page-title">
+            <h1>Standard Package Checkout</h1>
+            <p>Our most popular package for serious teen entrepreneurs</p>
+        </div>
+        
+        <div class="checkout-container">
+            <div class="checkout-form">
+                <h3>Payment Information</h3>
+                
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="payment-methods">
+                    <div class="payment-method active">
+                        <i class="fab fa-cc-visa"></i>
+                        <span>Credit Card</span>
+                    </div>
+                    <div class="payment-method">
+                        <i class="fab fa-paypal"></i>
+                        <span>PayPal</span>
+                    </div>
+                    <div class="payment-method">
+                        <i class="fas fa-university"></i>
+                        <span>Bank Transfer</span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+                </div>
+                
+                <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                    <div>
+                        <label for="exp-date">Expiration Date</label>
+                        <input type="text" id="exp-date" name="exp-date" placeholder="MM/YY" required>
+                    </div>
+                    <div>
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="coupon">Coupon Code (Optional)</label>
+                    <input type="text" id="coupon" name="coupon">
+                </div>
+                
+                <div class="checkout-total">
+                    <div class="total-row">
+                        <span>Standard Package:</span>
+                        <span>$29.99</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Discount:</span>
+                        <span>$0.00</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Tax:</span>
+                        <span>$2.10</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Total:</span>
+                        <span>$32.09</span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms" style="display: inline; margin-left: 10px;">I agree to the <a href="#" style="color: var(--primary-green);">Terms of Service</a> and <a href="#" style="color: var(--primary-green);">Privacy Policy</a></label>
+                </div>
+                
+                <button class="complete-btn">Complete Purchase</button>
+            </div>
+            
+            <div class="checkout-summary">
+                <h3>Order Summary</h3>
+                
+                <div class="package-details">
+                    <div class="package-icon" style="background: rgba(46, 139, 87, 0.2);">
+                        <i class="fas fa-star" style="color: var(--primary-green);"></i>
+                    </div>
+                    <div class="package-info">
+                        <h4>Standard Package</h4>
+                        <div class="price">$29.99</div>
+                    </div>
+                </div>
+                
+                <p>Everything in Basic plus premium features:</p>
+                
+                <ul class="features-list">
+                    <li>Everything in Basic Package</li>
+                    <li>Success Mindset eBook</li>
+                    <li>Complete Business Planner</li>
+                    <li>Social Media Content Ideas</li>
+                    <li>Email Support</li>
+                    <li>Community Access</li>
+                    <li>Monthly Webinars</li>
+                </ul>
+                
+                <div class="contact-item" style="margin-top: 30px;">
+                    <i class="fas fa-lock" style="color: var(--primary-green);"></i>
+                    <span>Your payment information is securely encrypted</span>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-sync-alt" style="color: var(--primary-green);"></i>
+                    <span>30-day money-back guarantee</span>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-gift" style="color: var(--primary-green);"></i>
+                    <span>Includes 3 bonus templates</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Kieseki</h3>
+                <p>Inspiring a generation of teenage creators to build, not just consume.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#pricing">Pricing</a></li>
+                    <li><a href="../faq.html">FAQ</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="../faq.html">FAQ</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>support@kieseki.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+1 (555) 123-4567</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Tokyo, Japan</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Kieseki. All rights reserved. Miracles Begin With You.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+        
+        mobileMenu.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            mobileMenu.querySelector('i').classList.toggle('fa-bars');
+            mobileMenu.querySelector('i').classList.toggle('fa-times');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('#nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileMenu.querySelector('i').classList.add('fa-bars');
+                mobileMenu.querySelector('i').classList.remove('fa-times');
+            });
+        });
+
+        // Payment method selection
+        document.querySelectorAll('.payment-method').forEach(method => {
+            method.addEventListener('click', () => {
+                document.querySelectorAll('.payment-method').forEach(m => {
+                    m.classList.remove('active');
+                });
+                method.classList.add('active');
+            });
+        });
+
+        // Complete purchase button
+        document.querySelector('.complete-btn').addEventListener('click', function() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const cardNumber = document.getElementById('card-number').value;
+            const terms = document.getElementById('terms').checked;
+            
+            if (!name || !email || !cardNumber || !terms) {
+                alert('Please fill in all required fields and agree to the terms');
+                return;
+            }
+            
+            // In a real implementation, you would process payment here
+            alert('Thank you for your purchase! Your download link has been sent to your email.');
+        });
+    </script>
+</body>
+</html>
