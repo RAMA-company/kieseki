@@ -50,58 +50,19 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 
-                <div class="payment-methods">
-                    <div class="payment-method active">
-                        <i class="fab fa-cc-visa"></i>
-                        <span>Credit Card</span>
+                <div class="crypto-payment">
+                    <h4>Pay with Cryptocurrency</h4>
+                    <p>Click the button below to complete your payment using NOWPayments</p>
+                    
+                    <div class="nowpayments-btn-container">
+                        <a href="https://nowpayments.io/payment/?iid=5876522274&source=button" target="_blank" rel="noreferrer noopener">
+                            <img src="https://nowpayments.io/images/embeds/payment-button-black.svg" alt="Crypto payment button by NOWPayments">
+                        </a>
                     </div>
-                    <div class="payment-method">
-                        <i class="fab fa-paypal"></i>
-                        <span>PayPal</span>
-                    </div>
-                    <div class="payment-method">
-                        <i class="fas fa-university"></i>
-                        <span>Bank Transfer</span>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="card-number">Card Number</label>
-                    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
-                </div>
-                
-                <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
-                    <div>
-                        <label for="exp-date">Expiration Date</label>
-                        <input type="text" id="exp-date" name="exp-date" placeholder="MM/YY" required>
-                    </div>
-                    <div>
-                        <label for="cvv">CVV</label>
-                        <input type="text" id="cvv" name="cvv" placeholder="123" required>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="coupon">Coupon Code (Optional)</label>
-                    <input type="text" id="coupon" name="coupon">
-                </div>
-                
-                <div class="checkout-total">
-                    <div class="total-row">
-                        <span>Premium Package:</span>
-                        <span>$49.99</span>
-                    </div>
-                    <div class="total-row">
-                        <span>Discount:</span>
-                        <span>$0.00</span>
-                    </div>
-                    <div class="total-row">
-                        <span>Tax:</span>
-                        <span>$3.50</span>
-                    </div>
-                    <div class="total-row">
-                        <span>Total:</span>
-                        <span>$53.49</span>
+                    
+                    <div class="crypto-notice">
+                        <i class="fas fa-info-circle"></i>
+                        <span>After payment, you'll receive your package via email within 15 minutes.</span>
                     </div>
                 </div>
                 
@@ -109,8 +70,6 @@
                     <input type="checkbox" id="terms" name="terms" required>
                     <label for="terms" style="display: inline; margin-left: 10px;">I agree to the <a href="#" style="color: var(--primary-green);">Terms of Service</a> and <a href="#" style="color: var(--primary-green);">Privacy Policy</a></label>
                 </div>
-                
-                <button class="complete-btn">Complete Purchase</button>
             </div>
             
             <div class="checkout-summary">
@@ -240,32 +199,6 @@
                 mobileMenu.querySelector('i').classList.add('fa-bars');
                 mobileMenu.querySelector('i').classList.remove('fa-times');
             });
-        });
-
-        // Payment method selection
-        document.querySelectorAll('.payment-method').forEach(method => {
-            method.addEventListener('click', () => {
-                document.querySelectorAll('.payment-method').forEach(m => {
-                    m.classList.remove('active');
-                });
-                method.classList.add('active');
-            });
-        });
-
-        // Complete purchase button
-        document.querySelector('.complete-btn').addEventListener('click', function() {
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const cardNumber = document.getElementById('card-number').value;
-            const terms = document.getElementById('terms').checked;
-            
-            if (!name || !email || !cardNumber || !terms) {
-                alert('Please fill in all required fields and agree to the terms');
-                return;
-            }
-            
-            // In a real implementation, you would process payment here
-            alert('Thank you for your purchase! Your download link has been sent to your email.');
         });
     </script>
 </body>
